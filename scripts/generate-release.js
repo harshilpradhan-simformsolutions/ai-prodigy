@@ -155,9 +155,9 @@ const main = async () => {
             <h1><code>${repo}</code> Software Release Notes</h1>
           </div>
       <p>Dear User,</p>
-      <p>We are excited to announce the release of a new version of <code>web app</code>. Please find below the detailed release note.</p>
+      <p>We are excited to announce the release of a new version of <code>${repo}</code>. Please find below the detailed release note.</p>
       ${result.data?.choices?.[0]?.message?.content}
-      <p><a href="https://github.com/${owner}/${repo}" target="_blank">Click here</a> for more information about the current release.
+      <p><a href="https://github.com/${owner}/${repo}/pull/${pull_number}" target="_blank">Click here</a> for more information about the current release.
     <div class="footer">
     This release note was generated automatically by OpenAI <code>gpt-3.5-turbo</code> model.
   </div>
