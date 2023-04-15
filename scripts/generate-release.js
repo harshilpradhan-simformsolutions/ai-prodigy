@@ -14,7 +14,16 @@ const main = async () => {
   const host = process.env.EMAIL_HOST;
   const port = process.env.EMAIL_PORT;
 
-  const users = ["harshilpradhan@simformsolutions.com"];
+  const users = [
+    "harshilpradhan@simformsolutions.com",
+    "muskan.m@simformsolutions.com",
+    "harsh.s@simformsolutions.com",
+    "jay.patel@simformsolutions.com",
+    "tarun.a@simformsolutions.com",
+    "nikunj.v@simformsolutions.com",
+    "alpesh.r@simformsolutions.com",
+    "kairavi.s@simformsolutions.com",
+  ];
 
   let input = "";
 
