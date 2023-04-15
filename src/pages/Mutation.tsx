@@ -1,9 +1,9 @@
-import { TextInput, Button } from '@mantine/core';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { ChangeEvent, useState } from 'react';
+import { TextInput, Button } from "@mantine/core";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { ChangeEvent, useState } from "react";
 
 const useForm = () => {
-  const [state, setState] = useState('');
+  const [state, setState] = useState("");
 
   return [
     state,
@@ -29,10 +29,10 @@ export const Mutation = () => {
     onMutate: (variables) => {
       // Getting and Setting data to and from cache
       // Returns data for users key
-      const data = client.getQueryData(['users']);
+      const data = client.getQueryData(["users"]);
 
       // Set query data to users
-      client.setQueryData<any[]>(['users'], (prev) => {
+      client.setQueryData<any[]>(["users"], (prev) => {
         if (!prev) return [];
 
         return [...prev, variables];
@@ -40,7 +40,7 @@ export const Mutation = () => {
     },
     onSuccess: () => {
       // Refetch all queries starting with user
-      client.invalidateQueries(['users']);
+      client.invalidateQueries(["users"]);
 
       // Refetch all the queries having observers > 0
       client.invalidateQueries();
