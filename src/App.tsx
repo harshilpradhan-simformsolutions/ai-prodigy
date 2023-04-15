@@ -1,10 +1,10 @@
-import { Route, Routes } from 'react-router-dom';
-import { Header } from './components';
-import { Home } from './pages/Home';
-import { Users } from './pages/Users';
-import { Posts } from './pages/Posts';
-import { SingleUser } from './pages/SingleUser';
-import { ActiveUsers } from './pages/ActiveUsers';
+import { Route, Routes } from "react-router-dom";
+import { Header } from "./components";
+import { Home } from "./pages/Home";
+import { Users } from "./pages/Users";
+import { Posts } from "./pages/Posts";
+import { SingleUser } from "./pages/SingleUser";
+import { ActiveUsers } from "./pages/ActiveUsers";
 
 function App() {
   return (
