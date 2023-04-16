@@ -22,11 +22,6 @@ export const Users = () => {
     console.log('Data Changed');
   }, [data]);
 
-  const transformedData = useMemo(() => {
-    // Some expensive data transformation
-    // Optimized due to structural sharing
-  }, [data]);
-
   return (
     <>
       <Button onClick={() => client.invalidateQueries(['users'])}>
