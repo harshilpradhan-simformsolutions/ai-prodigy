@@ -14,7 +14,6 @@ export const Users = () => {
 
     // Side effects
     onSuccess: (data) => console.log('success'),
-    onError: () => console.log('Error'),
   });
 
   useEffect(() => {
