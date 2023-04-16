@@ -11,9 +11,6 @@ export const Users = () => {
       fetch('https://jsonplaceholder.typicode.com/users').then((e) =>
         e.json()
       ) as Promise<any[]>,
-
-    // Side effects
-    onSuccess: (data) => console.log('success'),
   });
 
   useEffect(() => {
