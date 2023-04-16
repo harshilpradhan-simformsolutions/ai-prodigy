@@ -102,7 +102,7 @@ const main = async () => {
   transport.sendMail(
     {
       to: users,
-      subject: `A new version is released for project ${owner}/${repo}`,
+      subject: `A new version is released for project ${repo}`,
       html: `<!DOCTYPE html>
       <html>
         <head>
@@ -133,7 +133,6 @@ const main = async () => {
             }
             ul {
               list-style-type: disc;
-              margin-left: 20px;
             }
             li {
               margin-bottom: 5px;
@@ -154,7 +153,7 @@ const main = async () => {
           <div class="header">
             <h1><code>${repo}</code> Software Release Notes</h1>
           </div>
-      <p>Dear User,</p>
+      <p>Dear user,</p>
       <p>We are excited to announce the release of a new version of <code>${repo}</code>. Please find below the detailed release note.</p>
       ${result.data?.choices?.[0]?.message?.content}
       <p><a href="https://github.com/${owner}/${repo}/pull/${pull_number}" target="_blank">Click here</a> for more information about the current release.

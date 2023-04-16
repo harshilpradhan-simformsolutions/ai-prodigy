@@ -22,7 +22,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm i @octokit/rest openai nodemailer
+        run: npm i @octokit/rest@19.0.7 openai@3.2.1 nodemailer@6.9.1
 
       - name: Generate Release Notes
         env:
