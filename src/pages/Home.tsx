@@ -1,11 +1,11 @@
-import { Button, Title } from '@mantine/core';
-import { useEffect, useReducer, useState } from 'react';
+import { Button, Title } from "@mantine/core";
+import { useEffect, useReducer, useState } from "react";
 
 const useUsers = () => {
   const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then((r) => r.json())
       .then(setData);
   }, []);
